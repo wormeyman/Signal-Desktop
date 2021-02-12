@@ -10273,9 +10273,9 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-"libsignal-client@https://github.com/signalapp/libsignal-client-node.git#864ead5c492bd4e61d02c086a42aba476330fcfd":
+"libsignal-client@https://github.com/dennisameling/libsignal-client-node.git#b892c8fcac3329a71ae8af597737de60cf80529b":
   version "0.2.0"
-  resolved "https://github.com/signalapp/libsignal-client-node.git#864ead5c492bd4e61d02c086a42aba476330fcfd"
+  resolved "https://github.com/dennisameling/libsignal-client-node.git#b892c8fcac3329a71ae8af597737de60cf80529b"
   dependencies:
     bindings "^1.5.0"
 
@@ -14373,9 +14373,9 @@ rimraf@~2.4.0:
   dependencies:
     glob "^6.0.1"
 
-"ringrtc@https://github.com/signalapp/signal-ringrtc-node.git#552582f97102be4baf27a81fdaab1fba46fc6595":
-  version "2.9.2"
-  resolved "https://github.com/signalapp/signal-ringrtc-node.git#552582f97102be4baf27a81fdaab1fba46fc6595"
+"ringrtc@https://github.com/dennisameling/signal-ringrtc-node.git#0709d0249a51466ae9dc83b92f9708b4dfc7f414":
+  version "2.9.3"
+  resolved "https://github.com/dennisameling/signal-ringrtc-node.git#0709d0249a51466ae9dc83b92f9708b4dfc7f414"
 
 ripemd160@^2.0.0, ripemd160@^2.0.1:
   version "2.0.1"
@@ -17530,9 +17530,9 @@ zip-stream@^1.2.0:
     lodash "^4.8.0"
     readable-stream "^2.0.0"
 
-"zkgroup@https://github.com/signalapp/signal-zkgroup-node.git#2d7db946cc88492b65cc66e9aa9de0c9e664fd8d":
+"zkgroup@https://github.com/dennisameling/signal-zkgroup-node.git#d30be59e97ddb5856e256593fd3e13847a800a1e":
   version "0.7.1"
-  resolved "https://github.com/signalapp/signal-zkgroup-node.git#2d7db946cc88492b65cc66e9aa9de0c9e664fd8d"
+  resolved "https://github.com/dennisameling/signal-zkgroup-node.git#d30be59e97ddb5856e256593fd3e13847a800a1e"
   dependencies:
     ffi-napi "2.4.5"
     ref-array-napi "1.2.0"

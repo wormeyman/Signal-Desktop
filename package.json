@@ -135,7 +135,7 @@
     "redux-ts-utils": "3.2.2",
     "reselect": "4.0.0",
     "rimraf": "2.6.2",
-    "ringrtc": "https://github.com/signalapp/signal-ringrtc-node.git#552582f97102be4baf27a81fdaab1fba46fc6595",
+    "ringrtc": "https://github.com/dennisameling/signal-ringrtc-node.git#0709d0249a51466ae9dc83b92f9708b4dfc7f414",
     "sanitize-filename": "1.6.3",
     "sanitize.css": "11.0.0",
     "semver": "5.4.1",
@@ -148,8 +148,8 @@
     "underscore": "1.9.0",
     "uuid": "3.3.2",
     "websocket": "1.0.28",
-    "zkgroup": "https://github.com/signalapp/signal-zkgroup-node.git#2d7db946cc88492b65cc66e9aa9de0c9e664fd8d",
-    "libsignal-client": "https://github.com/signalapp/libsignal-client-node.git#864ead5c492bd4e61d02c086a42aba476330fcfd"
+    "zkgroup": "https://github.com/dennisameling/signal-zkgroup-node.git#d30be59e97ddb5856e256593fd3e13847a800a1e",
+    "libsignal-client": "https://github.com/dennisameling/libsignal-client-node.git#b892c8fcac3329a71ae8af597737de60cf80529b"
   },
   "devDependencies": {
     "@babel/core": "7.7.7",
@@ -266,7 +266,7 @@
     "@storybook/react/@storybook/core/node-fetch": "2.6.1"
   },
   "engines": {
-    "node": "12.18.3"
+    "node": "14.15.5"
   },
   "build": {
     "appId": "org.whispersystems.signal-desktop",
