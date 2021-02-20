@@ -148,7 +148,7 @@
     "underscore": "1.9.0",
     "uuid": "3.3.2",
     "websocket": "1.0.28",
-    "zkgroup": "https://github.com/dennisameling/signal-zkgroup-node.git#4745d6d24275006f0786a7a91e927a073b49f339",
+    "zkgroup": "https://github.com/dennisameling/signal-zkgroup-node.git#7b958f85a6666cd6bca342bcf80fe7616d3518b3",
     "libsignal-client": "https://github.com/dennisameling/libsignal-client-node.git#b892c8fcac3329a71ae8af597737de60cf80529b"
   },
   "devDependencies": {
