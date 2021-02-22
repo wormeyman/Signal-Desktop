@@ -62,7 +62,7 @@
     "fs-xattr": "0.3.0"
   },
   "dependencies": {
-    "@journeyapps/sqlcipher": "https://github.com/EvanHahn-signal/node-sqlcipher.git#16916949f0c010f6e6d3d5869b10a0ab813eae75",
+    "@journeyapps/sqlcipher": "https://github.com/dennisameling/node-sqlcipher.git#51dc549b649a384693c920a02174f5e81fb87c97",
     "@sindresorhus/is": "0.8.0",
     "abort-controller": "3.0.0",
     "array-move": "2.1.0",
@@ -266,7 +266,7 @@
     "@storybook/react/@storybook/core/node-fetch": "2.6.1"
   },
   "engines": {
-    "node": "14.14.0"
+    "node": "14.15.4"
   },
   "build": {
     "appId": "org.whispersystems.signal-desktop",
