@@ -162,7 +162,7 @@
     "underscore": "1.12.1",
     "uuid": "3.3.2",
     "websocket": "1.0.28",
-    "zkgroup": "https://github.com/dennisameling/signal-zkgroup-node.git#e7ee71b8cfc307121a548ece3febc63a1f41be9a",
+    "zkgroup": "https://github.com/dennisameling/signal-zkgroup-node.git#5f28c4b9f86cbaf6dd7d8c574c9b9ac0529510de",
     "zod": "1.11.13"
   },
   "devDependencies": {
