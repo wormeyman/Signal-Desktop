@@ -68,7 +68,7 @@
     "fs-xattr": "0.3.0"
   },
   "dependencies": {
-    "@signalapp/signal-client": "https://github.com/dennisameling/libsignal-node.git#b00afcc71e762e9231f9ee305f257878eefcf989",
+    "@signalapp/signal-client": "https://github.com/dennisameling/libsignal-node.git#179c3eeec074f15282f37d117ee3a704c2d03814",
     "@sindresorhus/is": "0.8.0",
     "@types/pino": "6.3.6",
     "@types/pino-multi-stream": "5.1.0",

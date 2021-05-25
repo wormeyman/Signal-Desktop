@@ -1483,9 +1483,9 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@signalapp/signal-client@https://github.com/dennisameling/libsignal-node.git#b00afcc71e762e9231f9ee305f257878eefcf989":
-  version "0.6.0"
-  resolved "https://github.com/dennisameling/libsignal-node.git#b00afcc71e762e9231f9ee305f257878eefcf989"
+"@signalapp/signal-client@https://github.com/dennisameling/libsignal-node.git#179c3eeec074f15282f37d117ee3a704c2d03814":
+  version "0.5.2"
+  resolved "https://github.com/dennisameling/libsignal-node.git#179c3eeec074f15282f37d117ee3a704c2d03814"
   dependencies:
     node-gyp-build "^4.2.3"
     uuid "^8.3.0"
