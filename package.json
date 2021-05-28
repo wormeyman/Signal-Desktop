@@ -295,7 +295,7 @@
     "zkgroup/ref-array-napi/ref-napi/node-addon-api": "2.0.1"
   },
   "engines": {
-    "node": "14.16.0"
+    "node": "15.8.0"
   },
   "build": {
     "appId": "org.whispersystems.signal-desktop",
