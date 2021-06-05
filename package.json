@@ -148,7 +148,7 @@
     "redux-ts-utils": "3.2.2",
     "reselect": "4.0.0",
     "rimraf": "2.6.2",
-    "ringrtc": "https://github.com/dennisameling/signal-ringrtc-node.git#91c99a725e5e08618f85ebec256c2f7b2b9d0a58",
+    "ringrtc": "https://github.com/dennisameling/signal-ringrtc-node.git#54329d9b663f4bec7cdbac25a0d39a67a22dfb82",
     "rotating-file-stream": "2.1.5",
     "sanitize-filename": "1.6.3",
     "sanitize.css": "11.0.0",
@@ -332,7 +332,7 @@
         "node_modules/zkgroup/libzkgroup.*",
         "node_modules/@signalapp/signal-client/build/*.node"
       ],
-      "artifactName": "${name}-win-${version}.${ext}",
+      "artifactName": "${name}-win-${version}-${arch}.${ext}",
       "publisherName": "Signal (Quiet Riddle Ventures, LLC)",
       "icon": "build/icons/win/icon.ico",
       "publish": [
