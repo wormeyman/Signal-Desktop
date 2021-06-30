@@ -1,0 +1,35 @@
+name: Create GitHub release
+
+on: 
+  push:
+    tags:
+    - '*'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    # Turns v5.7.0-multi-arch into 5.7.0
+    - name: Get version from tag
+      run: |
+        export SIGNAL_VERSION_LONG=${GITHUB_REF/refs\/tags\//}
+        echo "SIGNAL_VERSION=${SIGNAL_VERSION_LONG:1:5}" >> $GITHUB_ENV
+    - uses: ncipollo/release-action@v1
+      with:
+        body: |
+          This is the v${{ env.SIGNAL_VERSION }} release. Existing users of Signal Unofficial will get an in-app update notification.
+
+          **Note that it might take up to 1 hour for the URLs below to become active**
+
+          Windows arm64:
+          https://signal.dennisameling.com/dl/signal-desktop-unofficial-win-${{ env.SIGNAL_VERSION }}-arm64.exe
+
+          Windows x86:
+          https://signal.dennisameling.com/dl/signal-desktop-unofficial-win-${{ env.SIGNAL_VERSION }}-ia32.exe
+
+          macOS arm64 (Apple Silicon):
+          https://signal.dennisameling.com/dl/signal-desktop-unofficial-mac-${{ env.SIGNAL_VERSION }}-arm64.dmg
+        name: v${{ env.SIGNAL_VERSION }}
+        token: ${{ secrets.GITHUB_TOKEN }}
