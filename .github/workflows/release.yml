@@ -7,16 +7,26 @@ on:
 
 jobs:
 
-  build:
+  release:
     runs-on: ubuntu-latest
+
+    outputs:
+      release_url: ${{ steps.release-url.outputs.html_url }}
+      signal_version: ${{ steps.signal-version.outputs.version }}
+
     steps:
     - uses: actions/checkout@v2
+
     # Turns v5.7.0-multi-arch into 5.7.0
     - name: Get version from tag
+      id: signal-version
       run: |
         export SIGNAL_VERSION_LONG=${GITHUB_REF/refs\/tags\//}
         echo "SIGNAL_VERSION=${SIGNAL_VERSION_LONG:1:5}" >> $GITHUB_ENV
+        echo "::set-output name=version::${SIGNAL_VERSION_LONG:1:5}"
+
     - uses: ncipollo/release-action@v1
+      id: release-url
       with:
         body: |
           This is the v${{ env.SIGNAL_VERSION }} release. Existing users of Signal Unofficial will get an in-app update notification.
@@ -33,3 +43,23 @@ jobs:
           https://signal.dennisameling.com/dl/signal-desktop-unofficial-mac-${{ env.SIGNAL_VERSION }}-arm64.dmg
         name: v${{ env.SIGNAL_VERSION }}
         token: ${{ secrets.GITHUB_TOKEN }}
+
+  comment:
+    needs: release
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        issue: [4461, 3745, 1636]
+
+    steps:
+    - name: Create comment
+      uses: peter-evans/create-or-update-comment@v1
+      with:
+        token: ${{ secrets.DENNIS_PAT }}
+        repository: signalapp/signal-desktop
+        issue-number: ${{ matrix.issue }}
+        body: |
+          This is an automated message that version **${{ needs.release.outputs.signal_version }}** is now live. Please note that it might take 1-2 hours for the binaries to be uploaded to the server.
+
+          Release URL: ${{ needs.release.outputs.release_url }}
