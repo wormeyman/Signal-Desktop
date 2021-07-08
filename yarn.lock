@@ -19386,9 +19386,9 @@ zip-stream@^4.1.0:
     compress-commons "^4.1.0"
     readable-stream "^3.6.0"
 
-"zkgroup@https://github.com/dennisameling/signal-zkgroup-node.git#650af266e1ec83a54f776011b90f98e59ac9043d":
+"zkgroup@https://github.com/dennisameling/signal-zkgroup-node.git#4299f6d7a94e24c99b2312f14061da32f848529a":
   version "0.7.3"
-  resolved "https://github.com/dennisameling/signal-zkgroup-node.git#650af266e1ec83a54f776011b90f98e59ac9043d"
+  resolved "https://github.com/dennisameling/signal-zkgroup-node.git#4299f6d7a94e24c99b2312f14061da32f848529a"
   dependencies:
     "@types/ffi-napi" "^4.0.1"
     "@types/ref-napi" "^3.0.1"
