@@ -55,17 +55,13 @@ jobs:
     needs: release
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        issue: [4461, 3745, 1636]
-
     steps:
     - name: Create comment
       uses: peter-evans/create-or-update-comment@v1
       with:
         token: ${{ secrets.DENNIS_PAT }}
-        repository: signalapp/signal-desktop
-        issue-number: ${{ matrix.issue }}
+        repository: dennisameling/Signal-Desktop
+        issue-number: 4
         body: |
           This is an automated message that version **${{ needs.release.outputs.signal_version }}** is now live. Please note that it might take 1-2 hours for the binaries to be uploaded to the server.
 
