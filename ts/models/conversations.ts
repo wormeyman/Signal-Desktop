@@ -10,7 +10,6 @@ import {
   MessageAttributesType,
   MessageModelCollectionType,
   QuotedMessageType,
-  ReactionModelType,
   VerificationOptions,
   WhatIsThis,
 } from '../model-types.d';
@@ -73,7 +72,7 @@ import {
   getMessagePropStatus,
 } from '../state/selectors/message';
 import { Deletes } from '../messageModifiers/Deletes';
-import { Reactions } from '../messageModifiers/Reactions';
+import { ReactionModel, Reactions } from '../messageModifiers/Reactions';
 
 // TODO: remove once we move away from ArrayBuffers
 const FIXMEU8 = Uint8Array;
@@ -3391,7 +3390,7 @@ export class ConversationModel extends window.Backbone
 
       return result;
     }).catch(() => {
-      let reverseReaction: ReactionModelType;
+      let reverseReaction: ReactionModel;
       if (oldReaction) {
         // Either restore old reaction
         reverseReaction = Reactions.getSingleton().add({
