@@ -108,6 +108,7 @@ const excludedFilesRegexps = [
   '^node_modules/ajv/.+',
   '^node_modules/amdefine/.+',
   '^node_modules/ansi-colors/.+',
+  '^node_modules/ansi-styles/.+', // Used by typed-scss-modules > chalk
   '^node_modules/anymatch/.+',
   '^node_modules/app-builder-lib/.+',
   '^node_modules/archiver-utils/.+', // Used by spectron
@@ -183,6 +184,7 @@ const excludedFilesRegexps = [
   '^node_modules/lolex/.+',
   '^node_modules/magic-string/.+',
   '^node_modules/markdown-it/.+',
+  '^node_modules/meow/.+', // Used by node-sass
   '^node_modules/minimatch/.+',
   '^node_modules/mocha/.+',
   '^node_modules/nise/.+',

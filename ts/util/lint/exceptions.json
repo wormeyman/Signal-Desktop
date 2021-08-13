@@ -1240,20 +1240,6 @@
   },
   {
     "rule": "jQuery-wrap(",
-    "path": "node_modules/@chanzuckerberg/axe-storybook-testing/node_modules/ansi-styles/index.js",
-    "line": "\t\t\tstyles[name] = wrap(identity, offset);",
-    "reasonCategory": "falseMatch",
-    "updated": "2021-04-06T04:01:59.934Z"
-  },
-  {
-    "rule": "jQuery-wrap(",
-    "path": "node_modules/@chanzuckerberg/axe-storybook-testing/node_modules/ansi-styles/index.js",
-    "line": "\t\t\tstyles[name] = wrap(suite[targetSpace], offset);",
-    "reasonCategory": "falseMatch",
-    "updated": "2021-04-06T04:01:59.934Z"
-  },
-  {
-    "rule": "jQuery-wrap(",
     "path": "node_modules/@chanzuckerberg/axe-storybook-testing/node_modules/cliui/build/lib/index.js",
     "line": "                wrapped = mixin.wrap(col.text, this.negatePadding(col), { hard: true }).split('\\n');",
     "reasonCategory": "falseMatch",
