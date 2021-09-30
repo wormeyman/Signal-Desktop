@@ -1,39 +1,21 @@
 <!-- Copyright 2014-2021 Signal Messenger, LLC -->
 <!-- SPDX-License-Identifier: AGPL-3.0-only -->
+# Signal Unofficial (arm64)
 
-# Signal Desktop
+This repository is a fork of the official Signal destop with added support for arm64 on Windows and Apple Silicon you can download our [releases](https://github.com/dennisameling/Signal-Desktop/releases) for your device.
 
-Signal Desktop links with Signal on [Android](https://github.com/signalapp/Signal-Android) or [iOS](https://github.com/signalapp/Signal-iOS) and lets you message from your Windows, macOS, and Linux computers.
+## Tips and Tricks
 
-[Install the production version](https://signal.org/download/) or help us out by [installing the beta version](https://support.signal.org/hc/articles/360007318471-Signal-Beta).
+### Migrate from Signal Official to Signal Unofficial on macOS using the terminal
 
-## Got a question?
+```mv ~/Library/Application\ Support/Signal\ Unofficial ~/Library/Application\ Support/Signal\ UnofficialBACKUP && cp -R -v ~/Library/Application\ Support/Signal ~/Library/Application\ Support/Signal\ Unofficial```
 
-You can find answers to a number of frequently asked questions on our [support site](https://support.signal.org/).
-The [community forum](https://community.signalusers.org/) is another good place for questions.
-
-## Found a Bug?
-
-Please search for any [existing issues](https://github.com/signalapp/Signal-Desktop/issues) that describe your bug in order to avoid duplicate submissions.
-
-## Have a feature request, question, comment?
-
-Please use our community forum: https://community.signalusers.org/
-
-## Contributing Translations
-
-Interested in helping to translate Signal? Contribute here:
-
-https://www.transifex.com/projects/p/signal-desktop
-
-## Contributing Code
-
-Please see [CONTRIBUTING.md](https://github.com/signalapp/Signal-Desktop/blob/master/CONTRIBUTING.md)
-for setup instructions and guidelines for new contributors. Don't forget to sign the [CLA](https://signal.org/cla/).
+1. This backups the signal unofficial folder
+1. Then it overwrites the signal unofficial folder with the signal folder.
 
 ## Contributing Funds
 
-You can donate to Signal development through the [Signal Technology Foundation](https://signal.org/donate), an independent 501c3 nonprofit.
+You can donate to the official Signal development through the [Signal Technology Foundation](https://signal.org/donate), an independent 501c3 nonprofit.
 
 ## Cryptography Notice
 
