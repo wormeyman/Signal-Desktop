@@ -10,7 +10,7 @@ This repository is a fork of the official Signal destop with added support for a
 
 ```mv ~/Library/Application\ Support/Signal\ Unofficial ~/Library/Application\ Support/Signal\ UnofficialBACKUP && cp -R -v ~/Library/Application\ Support/Signal ~/Library/Application\ Support/Signal\ Unofficial```
 
-1. This backups the signal unofficial folder
+1. This backs up the signal unofficial folder
 1. Then it overwrites the signal unofficial folder with the signal folder.
 
 ## Contributing Funds
