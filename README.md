@@ -5,17 +5,23 @@
 This repository is a fork of the official Signal destop with added support for arm64 on Windows and Apple Silicon you can download our [releases](https://github.com/dennisameling/Signal-Desktop/releases) for your device.
 
 ## Tips and Tricks
+### Migrate from Signal Unofficial to Signal Official on macOS using the terminal (recommended when Signal Official has arm64 support)
+
+```mv ~/Library/Application\ Support/Signal ~/Library/Application\ Support/SignalBACKUP && cp -R -v ~/Library/Application\ Support/Signal\ Unofficial ~/Library/Application\ Support/Signal```
+
+1. This backs up the Signal folder
+1. Then it overwrites the Signal folder with the Signal Unofficial folder.
 
 ### Migrate from Signal Official to Signal Unofficial on macOS using the terminal
 
 ```mv ~/Library/Application\ Support/Signal\ Unofficial ~/Library/Application\ Support/Signal\ UnofficialBACKUP && cp -R -v ~/Library/Application\ Support/Signal ~/Library/Application\ Support/Signal\ Unofficial```
 
-1. This backs up the signal unofficial folder
-1. Then it overwrites the signal unofficial folder with the signal folder.
+1. This backs up the Signal Unofficial folder
+1. Then it overwrites the Signal Unofficial folder with the Signal folder.
 
 ## Contributing Funds
 
-You can donate to the official Signal development through the [Signal Technology Foundation](https://signal.org/donate), an independent 501c3 nonprofit.
+You can donate to the official Signal development through the [Signal Technology Foundation](https://Signal.org/donate), an independent 501c3 nonprofit.
 
 ## Cryptography Notice
 
@@ -28,6 +34,6 @@ The form and manner of this distribution makes it eligible for export under the 
 
 ## License
 
-Copyright 2013–2021 Signal, a 501c3 nonprofit
+Copyright 2013-2021 Signal, a 501c3 nonprofit
 
 Licensed under the AGPLv3: https://opensource.org/licenses/agpl-3.0
